@@ -1,9 +1,9 @@
 def my_collect(students)
   i = 0
-  first_name = []
+  name = []
   while i < students.length
-    first_name << yield(students[i])
+    name << yield(students[i])
     i += 1
   end
-  first_name
+  name
 end
